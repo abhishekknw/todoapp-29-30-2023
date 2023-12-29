@@ -1,0 +1,7 @@
+# mysql-env.list
+##  -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=mydb
+
+MYSQL_DATABASE=myDB
+MYSQL_USER=admin
+MYSQL_PASSWORD=admin 
+MYSQL_ROOT_PASSWORD=admin

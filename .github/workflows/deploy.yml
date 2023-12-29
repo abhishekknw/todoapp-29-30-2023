@@ -1,0 +1,25 @@
+name: Deploy to Docker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Compose
+        run: docker-compose -f /home/ubuntu/two-tier-flask-app/docker-compose.yml 
+
+      # Add any additional steps you need, such as testing or database migrations
+
+      - name: Deploy to production
+        run: |
+          # Add any deployment steps you need
+          echo "Deployment steps go here"
+
